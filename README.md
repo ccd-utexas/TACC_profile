@@ -34,4 +34,4 @@ Password for 'https://ccd.utexas@gmail.com@github.com':
 [Then proceed as above for checking out the latest tag.]
 ```
 
-**Note:** This respository must be kept private since .profile has aliased commands for accessing Lonestar. The commands identify the ccd account.
+**Note:** This respository must be kept private since the startup scripts have commands for accessing Lonestar. The commands identify the ccd account. This repository also contains the Anaconda license.
