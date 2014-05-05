@@ -1,0 +1,27 @@
+####################
+# GENERAL SETUP
+
+# Allow all group members to edit your data
+umask 007
+
+export WDARCHIVE_DATA_PATH=/corral-repl/utexas/White_Dwarf_Archive
+export WDARCHIVE_SOFTWARE_PATH=/work/02109/ccd/White_Dwarf_Archive_Software
+
+PATH=/opt/apps/iRODS/3.1/bin:$PATH
+export PATH
+
+# Use Python from Continuum Analytics's
+# optimized Python package distribution, Anaconda:
+PYTHONPATH=$WDARCHIVE_SOFTWARE_PATH/anaconda
+# Other Python versions:
+
+# Setup path for Ureka
+# ur_setup
+
+JAVA_HOME=/usr/java/jdk1.7.0_45
+export JAVA_HOME
+
+# Note: Source mesasdk_init.sh last because $PATH is prepended.
+export MESA_DIR=$WDARCHIVE_SOFTWARE_PATH/src/mesa
+export MESASDK_ROOT=$WDARCHIVE_SOFTWARE_PATH/src/mesasdk
+source $MESASDK_ROOT/bin/mesasdk_init.sh
