@@ -21,4 +21,4 @@ for f in ${list_to_copy[@]}; do
     cp -r $f ~/.
 done
 
-echo "Exit this shell for environment changes to take effect."
+echo "Open a new shell for environment changes to take effect."
