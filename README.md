@@ -20,7 +20,8 @@ v1.0.0
 $ git checkout tags/v1.0.0
 Note: checking out 'tags/v1.0.0
 [...git status messages...]
-$ cp ~/TACC_profile/* ~/.
+[Copy startup files .profile, .profile_user, etc to home directory.]
+$ cp ~/TACC_profile/.* ~/.
 $ exit
 $ ssh you@lonestar.tacc.utexas.edu
 ```
