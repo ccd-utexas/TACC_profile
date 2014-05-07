@@ -35,7 +35,7 @@ $ exit
 $ ssh you@lonestar.tacc.utexas.edu
 ```
 
-To update, make a backup of your local repository (just in case) and clone the remote repository again.
+To update, make a backup of your local repository (just in case), and clone the remote repository again.
 
 Example update:
 ```
