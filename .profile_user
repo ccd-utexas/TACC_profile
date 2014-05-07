@@ -1,19 +1,24 @@
 ####################
 # GENERAL USER SETUP
 
-# Use the White_Dwarf_Archvive group id
-# and allow all group members to read, write, and execute your files
-newgrp G-803788
+# Allow all group members to read, write, and execute your files
 umask 007
+
+# Load git. Prepends git to $PATH.
+module load git
+
+# Access iRODS i-commands.
+PATH=/opt/apps/iRODS/3.1/bin:$PATH
+export PATH
+
+# For Java applications.
+JAVA_HOME=/usr/java/jdk1.7.0_45
+export JAVA_HOME
 
 # Access White_Dwarf_Archive data and software
 # with these environment variables.
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
 export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
-
-# Access iRODS i-commands.
-PATH=/opt/apps/iRODS/3.1/bin:$PATH
-export PATH
 
 # Use Python from Continuum Analytics's
 # optimized Python package distribution, Anaconda:
@@ -24,14 +29,7 @@ PYTHONPATH=$WDARCHIVE_SOFTWARE/anaconda
 # TODO: CHECK
 # ur_setup
 
-# For Java applications.
-JAVA_HOME=/usr/java/jdk1.7.0_45
-export JAVA_HOME
-
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
 export MESA_DIR=$WDARCHIVE_SOFTWARE/src/mesa
 export MESASDK_ROOT=$WDARCHIVE_SOFTWARE/src/mesasdk
 source $MESASDK_ROOT/bin/mesasdk_init.sh
-
-# Load git. Prepends git to $PATH.
-module load git
