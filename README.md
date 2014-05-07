@@ -22,6 +22,7 @@ Note: checking out 'tags/v1.0.0
 [...git status messages...]
 [Execute setup.sh.]
 $ bash setup.sh
+Setting up user profile.
 Copying .continuum to ~
 Copying .bashrc to ~
 [...status messages...]
