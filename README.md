@@ -7,7 +7,7 @@ Example first-time download:
 ```
 $ ssh you@lonestar.tacc.utexas.edu
 $ cd ~
-$ git clone https://github.com/ccd-utexas/TACC_profile
+$ git clone https://github.com/ccd-utexas/TACC_profile.git
 Cloning into 'TACC_profile'...
 Username for 'https://github.com': ccd.utexas@gmail.com
 Password for 'https://ccd.utexas@gmail.com@github.com':
