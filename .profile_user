@@ -1,5 +1,5 @@
 ####################
-# GENERAL SETUP
+# GENERAL USER SETUP
 
 # Allow all group members to edit your data
 umask 007
