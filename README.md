@@ -4,16 +4,17 @@ Environment for TACC accounts.
 
 ## Example setup
 
-Clone the remote repository, run the setup script to copy the startup dot-files to your home directory, then exit the shell created by the startup script for the environment changes to take effect.
+Load git, clone the remote repository, run the setup script to copy the startup dot-files to your home directory, then exit the shell created by the startup script for the environment changes to take effect.
 
 Example:
 ```
 $ ssh you@lonestar.tacc.utexas.edu
+$ module load git
 $ cd ~
 $ git clone https://github.com/ccd-utexas/TACC_profile.git
 Cloning into 'TACC_profile'...
-Username for 'https://github.com': ccd.utexas@gmail.com
-Password for 'https://ccd.utexas@gmail.com@github.com':
+Username for 'https://github.com': ccd-admin
+Password for 'https://ccd-admin@github.com':
 [See stache.security.utexas.edu for password.]
 [...git status messages...]
 $ cd ~/TACC_profile
@@ -22,7 +23,7 @@ v1.0.0
 v1.1.0
 [Checkout the latest tag.]
 $ git checkout tags/v1.1.0
-Note: checking out 'tags/v1.1.0
+Note: checking out 'tags/v1.1.0'.
 [...git status messages...]
 [Execute setup.sh.]
 $ source setup.sh
@@ -30,12 +31,12 @@ Setting up user profile.
 Copying .continuum to ~
 Copying .bashrc to ~
 [...status messages...]
-Exit this shell for environment changes to take effect. 
+Open a new shell for environment changes to take effect.
 $ exit
-[Your profile has now been changed, and you're still logged into Lonestar.]
+$ ssh you@lonestar.tacc.utexas.edu
 ```
 
-To update, make a rename your local repository as a backup with a date stamp (just in case), and clone the remote repository again.
+To update, rename your local repository as a backup with a date stamp (just in case), and clone the remote repository again.
 
 Example update:
 ```
