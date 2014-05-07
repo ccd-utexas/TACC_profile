@@ -8,12 +8,10 @@ umask 007
 module load git
 
 # Access iRODS i-commands.
-PATH=/opt/apps/iRODS/3.1/bin:$PATH
-export PATH
+export PATH=/opt/apps/iRODS/3.1/bin:$PATH
 
 # For Java applications.
-JAVA_HOME=/usr/java/jdk1.7.0_45
-export JAVA_HOME
+export JAVA_HOME=/usr/java/jdk1.7.0_45
 
 # Access White_Dwarf_Archive data and software
 # with these environment variables.
@@ -22,8 +20,9 @@ export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
 
 # Use Python from Continuum Analytics's
 # optimized Python package distribution, Anaconda:
-PYTHONPATH=$WDARCHIVE_SOFTWARE/anaconda
+export PYTHONPATH=$WDARCHIVE_SOFTWARE/anaconda
 # Other Python versions:
+# TODO
 
 # For data reduction. Ureka prepends $PYTHONPATH
 # TODO: CHECK
