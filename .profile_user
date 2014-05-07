@@ -6,8 +6,6 @@
 newgrp G-803788
 umask 007
 
-# Update git server
-module load git
 
 # Access White_Dwarf_Archive data and software
 # with these environment variables
@@ -23,13 +21,16 @@ export PATH
 PYTHONPATH=$WDARCHIVE_SOFTWARE/anaconda
 # Other Python versions:
 
-# Setup path for Ureka
+# Ureka prepends $PATH.
 # ur_setup
 
 JAVA_HOME=/usr/java/jdk1.7.0_45
 export JAVA_HOME
 
-# Source mesasdk_init.sh last because $PATH is prepended.
+# mesasdk_init.sh prepends $PATH.
 export MESA_DIR=$WDARCHIVE_SOFTWARE/src/mesa
 export MESASDK_ROOT=$WDARCHIVE_SOFTWARE/src/mesasdk
 source $MESASDK_ROOT/bin/mesasdk_init.sh
+
+# Load git. Prepends $PATH.
+module load git
