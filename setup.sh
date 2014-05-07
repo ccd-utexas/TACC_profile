@@ -22,5 +22,3 @@ for f in ${list_to_copy[@]}; do
 done
 
 echo "Open a new shell for environment changes to take effect."
-
-exit 0
