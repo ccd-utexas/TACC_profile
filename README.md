@@ -1,6 +1,6 @@
 # TACC_profile
 
-Environment for TACC accounts.
+Basic environment for all TACC accounts.
 
 ## Example setup
 
