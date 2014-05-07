@@ -16,12 +16,16 @@ Password for 'https://ccd.utexas@gmail.com@github.com':
 $ cd ~/TACC_profile
 $ git tag -l
 v1.0.0
-[checkout the latest tag]
+[Checkout the latest tag.]
 $ git checkout tags/v1.0.0
 Note: checking out 'tags/v1.0.0
 [...git status messages...]
-[Copy startup files .profile, .profile_user, etc to home directory.]
-$ cp ~/TACC_profile/.* ~/.
+[Execute setup.sh.]
+$ bash setup.sh
+Copying .continuum to ~
+Copying .bashrc to ~
+[...status messages...]
+Open a new shell for environment changes to take effect. 
 $ exit
 $ ssh you@lonestar.tacc.utexas.edu
 ```
