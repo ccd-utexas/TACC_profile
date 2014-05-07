@@ -4,7 +4,7 @@ Environment for TACC accounts.
 
 ## Example setup
 
-Clone the remote repository then run the setup script to copy the startup dot-files to your home directory.
+Clone the remote repository, run the setup script to copy the startup dot-files to your home directory, then exit the shell created by the startup script for the environment changes to take effect.
 
 Example:
 ```
@@ -30,9 +30,9 @@ Setting up user profile.
 Copying .continuum to ~
 Copying .bashrc to ~
 [...status messages...]
-Open a new shell for environment changes to take effect. 
+Exit this shell for environment changes to take effect. 
 $ exit
-$ ssh you@lonestar.tacc.utexas.edu
+[Your profile has now been changed, and you're still logged into Lonestar.]
 ```
 
 To update, make a rename your local repository as a backup with a date stamp (just in case), and clone the remote repository again.
