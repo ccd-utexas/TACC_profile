@@ -25,7 +25,7 @@ $ git checkout tags/v1.1.0
 Note: checking out 'tags/v1.1.0
 [...git status messages...]
 [Execute setup.sh.]
-$ bash setup.sh
+$ source setup.sh
 Setting up user profile.
 Copying .continuum to ~
 Copying .bashrc to ~
