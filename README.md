@@ -4,7 +4,7 @@ Environment for TACC accounts.
 
 ## Example setup
 
-Load git, clone the remote repository, run the setup script to copy the startup dot-files to your home directory, then exit the shell created by the startup script for the environment changes to take effect.
+Load git, clone the remote repository, run the setup script to copy the startup dot-files to your home directory, then open a new shell for the environment changes to take effect.
 
 Example:
 ```
