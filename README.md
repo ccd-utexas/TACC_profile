@@ -41,7 +41,7 @@ To update, rename your local repository as a backup with a date stamp (just in c
 Example update:
 ```
 $ cd ~
-[Make a backup of your local repository.]
+[Make a backup of your local repository with a date stamp.]
 $ mv TACC_profile TACC_profile_BACKUP_YYYYMMDD
 $ git clone https://github.com/ccd-utexas/TACC_profile.git
 [Proceed as in above example.]
