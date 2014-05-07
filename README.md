@@ -35,13 +35,13 @@ $ exit
 $ ssh you@lonestar.tacc.utexas.edu
 ```
 
-To update, make a backup of your local repository (just in case), and clone the remote repository again.
+To update, make a rename your local repository as a backup with a date stamp (just in case), and clone the remote repository again.
 
 Example update:
 ```
 $ cd ~
 [Make a backup of your local repository.]
-$ mv TACC_profile TACC_profile_YYYYMMDD
+$ mv TACC_profile TACC_profile_BACKUP_YYYYMMDD
 $ git clone https://github.com/ccd-utexas/TACC_profile.git
 [Proceed as in above example.]
 ```
