@@ -6,6 +6,9 @@
 newgrp G-803788
 umask 007
 
+# Update git server
+module load git
+
 # Access White_Dwarf_Archive data and software
 # with these environment variables
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
