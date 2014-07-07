@@ -23,6 +23,12 @@ export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
 export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
 
 # Use Ureka for data reduction with IRAF.
+ur_setup() {
+    eval `/home1/02109/ccd/.ureka/ur_setup -sh $*`
+}
+ur_forget() {
+    eval `/home1/02109/ccd/.ureka/ur_forget -sh $*`
+}
 ur_setup
 
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
