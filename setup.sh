@@ -7,6 +7,7 @@ echo "Setting up user profile."
 
 list_to_copy=(
     .continuum
+    .ureka
     .bashrc
     .cshrc
     .cshrc_user
@@ -14,8 +15,7 @@ list_to_copy=(
     .login_user
     .logout
     .profile
-    .profile_user
-    .ureka)
+    .profile_user)
 
 for f in ${list_to_copy[@]}; do
     echo "Copying $f to ~"
