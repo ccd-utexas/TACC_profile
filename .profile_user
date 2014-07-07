@@ -28,7 +28,8 @@ ur_forget() {
 ur_setup
 
 # Use Python from Continuum Analytics's
-# optimized Python package distribution, Anaconda:
+# optimized Python package distribution, Anaconda.
+export PATH="/work/02109/ccd/White_Dwarf_Archive_Software/src/anaconda/bin:$PATH"
 export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
 
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
