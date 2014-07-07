@@ -1,10 +1,10 @@
 #
 
 ur_setup() {
-    eval `/home1/02109/ccd/.ureka/ur_setup -sh $*`
+    eval `~/.ureka/ur_setup -sh $*`
 }
 ur_forget() {
-    eval `/home1/02109/ccd/.ureka/ur_forget -sh $*`
+    eval `~/.ureka/ur_forget -sh $*`
 }
 
 # added by Anaconda 2.0.1 installer
