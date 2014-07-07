@@ -18,10 +18,6 @@ export JAVA_HOME=/usr/java/jdk1.7.0_45
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
 export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
 
-# Use Python from Continuum Analytics's
-# optimized Python package distribution, Anaconda:
-export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
-
 # Use Ureka for data reduction with IRAF.
 ur_setup() {
     eval `~/.ureka/ur_setup -sh $*`
@@ -30,6 +26,10 @@ ur_forget() {
     eval `~/.ureka/ur_forget -sh $*`
 }
 ur_setup
+
+# Use Python from Continuum Analytics's
+# optimized Python package distribution, Anaconda:
+export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
 
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
 # See http://mesa.sourceforge.net/prereqs.html
