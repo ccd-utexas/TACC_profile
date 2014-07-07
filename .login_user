@@ -1,4 +1,4 @@
 #   **Create and add commands here.
 
-alias ur_setup 'eval `/home1/02109/ccd/.ureka/ur_setup -csh \!*`'
-alias ur_forget 'eval `/home1/02109/ccd/.ureka/ur_forget -csh \!*`'
+alias ur_setup 'eval `~/.ureka/ur_setup -csh \!*`'
+alias ur_forget 'eval `~/.ureka/ur_forget -csh \!*`'
