@@ -14,11 +14,12 @@ list_to_copy=(
     .login_user
     .logout
     .profile
-    .profile_user)
+    .profile_user
+    .ureka)
 
 for f in ${list_to_copy[@]}; do
     echo "Copying $f to ~"
-    cp -r $f ~/.
+    cp -i -r $f ~/.
 done
 
 echo "Open a new shell for environment changes to take effect."
