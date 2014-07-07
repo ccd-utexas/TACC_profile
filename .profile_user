@@ -32,6 +32,9 @@ ur_forget() {
 ur_setup
 
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
+# See http://mesa.sourceforge.net/prereqs.html
+# Set OMP_NUM_THREADS in your job script.
+# See https://www.tacc.utexas.edu/user-services/user-guides/lonestar-user-guide#running:sgeparallel:hybrid
 export MESA_DIR=$WDARCHIVE_SOFTWARE/src/mesa
 export MESASDK_ROOT=$WDARCHIVE_SOFTWARE/src/mesasdk
 source $MESASDK_ROOT/bin/mesasdk_init.sh
