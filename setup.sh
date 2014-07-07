@@ -7,6 +7,7 @@ echo "Setting up user profile."
 
 list_to_copy=(
     .continuum
+    .ureka
     .bashrc
     .cshrc
     .cshrc_user
@@ -18,7 +19,7 @@ list_to_copy=(
 
 for f in ${list_to_copy[@]}; do
     echo "Copying $f to ~"
-    cp -r $f ~/.
+    cp -i -r $f ~/.
 done
 
 echo "Open a new shell for environment changes to take effect."
