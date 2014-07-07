@@ -14,6 +14,3 @@ source /usr/local/etc/cshrc
 # Revision 1.1  1996/10/22  22:54:24  milfeld
 # Initial revision
 #
-
-alias ur_setup 'eval `~/ccd/.ureka/ur_setup -csh \!*`'
-alias ur_forget 'eval `~/ccd/.ureka/ur_forget -csh \!*`'
