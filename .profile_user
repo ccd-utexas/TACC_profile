@@ -11,11 +11,13 @@ module load git
 
 # Access iRODS i-commands.
 # Setting recommended by TACC staff.
+# Note: As of 2014-07-15, 'module load irods' is not yet available.
 export PATH=/opt/apps/iRODS/3.1/bin:$PATH
 
 # For Java applications.
 # Setting recommended by TACC staff.
 export JAVA_HOME=/usr/java/jdk1.7.0_45
+module load java64
 
 # Access White_Dwarf_Archive data and software with these environment variables.
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
