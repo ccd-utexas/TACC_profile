@@ -47,4 +47,12 @@ $ git clone https://github.com/ccd-utexas/TACC_profile.git
 [Proceed as in above example.]
 ```
 
-**Note:** This respository must be kept private since the startup scripts have commands for accessing Lonestar. The commands identify the ccd account. This repository also contains the Continuum Analytics license for Anaconda.
+## Ureka's Python vs Anaconda's Python
+
+Ureka's version of Python conflicts with Anaconda's version of Python. When using Ureka, comment out the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and run ```ur_test``` to confirm that Ureka works.
+
+To return to using Anaconda's version of Python, uncomment the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and ```which python``` to test environment change.
+
+## Notes
+
+This respository must be kept private since the startup scripts have commands for accessing Lonestar. The commands identify the ccd account. This repository also contains the Continuum Analytics license for Anaconda.

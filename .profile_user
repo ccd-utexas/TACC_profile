@@ -1,24 +1,37 @@
 ####################
 # GENERAL USER SETUP
 
-# Allow all group members to read, write, and execute your files
+# Allow all group members to read, write, and execute your files.
+# Settings recommended by TACC staff.
 umask 007
 
 # Load git. Prepends git to $PATH.
+# Setting recommended by TACC staff.
 module load git
 
 # Access iRODS i-commands.
+# Setting recommended by TACC staff.
+# Note: As of 2014-07-15, 'module load irods' is not yet available.
 export PATH=/opt/apps/iRODS/3.1/bin:$PATH
 
 # For Java applications.
+# Setting recommended by TACC staff.
 export JAVA_HOME=/usr/java/jdk1.7.0_45
+module load java64
 
-# Access White_Dwarf_Archive data and software
-# with these environment variables.
+# Access White_Dwarf_Archive data and software with these environment variables.
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
 export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
 
+# Add src to path for programs like Period04.
+export PATH=$WDARCHIVE_SOFTWARE/src:$PATH
+
 # Use Ureka for data reduction with IRAF.
+# Added by Ureka to .bashrc, .cshrc, .login.
+# To use Ureka:
+# - Comment out Anaconda Python block below.
+# - Execute 'source .profile_user'
+# - Run 'ur_test' to test Ureka installation.
 ur_setup() {
     eval `~/.ureka/ur_setup -sh $*`
 }
@@ -28,7 +41,14 @@ ur_forget() {
 ur_setup
 
 # Use Python from Continuum Analytics's
-# optimized Python package distribution, Anaconda:
+# optimized Python package distribution, Anaconda.
+# Added by Anaconda 2.0.1 installer to .bashrc.
+# To use Ureka, this block must be commented out.
+# To use Anaconda Python:
+# - Uncomment the block below.
+# - Execute 'source .profile_user'
+# - Execute 'which python' to test environment change.
+export PATH=$WDARCHIVE_SOFTWARE/src/anaconda/bin:$PATH
 export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
 
 # For MESA. mesasdk_init.sh prepends gcc to $PATH.
