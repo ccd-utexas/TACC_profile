@@ -21,7 +21,7 @@ export JAVA_HOME=/usr/java/jdk1.7.0_45
 export WDARCHIVE_DATA=/corral-repl/utexas/White_Dwarf_Archive
 export WDARCHIVE_SOFTWARE=/work/02109/ccd/White_Dwarf_Archive_Software
 
-# Add src to path for programs like ds9.
+# Add src to path for programs like Period04.
 export PATH=$WDARCHIVE_SOFTWARE/src:$PATH
 
 # Use Ureka for data reduction with IRAF.
