@@ -26,6 +26,10 @@ export PATH=$WDARCHIVE_SOFTWARE/src:$PATH
 
 # Use Ureka for data reduction with IRAF.
 # Added by Ureka to .bashrc, .cshrc, .login.
+# To use Ureka:
+# - Comment out Anaconda Python block below.
+# - Execute 'source .profile_user'
+# - Run 'ur_test' to test Ureka installation.
 ur_setup() {
     eval `~/.ureka/ur_setup -sh $*`
 }
@@ -37,6 +41,11 @@ ur_setup
 # Use Python from Continuum Analytics's
 # optimized Python package distribution, Anaconda.
 # Added by Anaconda 2.0.1 installer to .bashrc.
+# To use Ureka, this block must be commented out.
+# To use Anaconda Python:
+# - Uncomment the block below.
+# - Execute 'source .profile_user'
+# - Execute 'which python' to test environment change.
 export PATH=$WDARCHIVE_SOFTWARE/src/anaconda/bin:$PATH
 export PYTHONPATH=$WDARCHIVE_SOFTWARE/src/anaconda
 
