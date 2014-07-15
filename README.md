@@ -51,8 +51,7 @@ $ git clone https://github.com/ccd-utexas/TACC_profile.git
 
 Ureka's version of Python conflicts with Anaconda's version of Python. When using Ureka, comment out the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and run ```ur_test``` to confirm that Ureka works.
 
-To return to using Anaconda's version of Python, uncomment the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user```.
-
+To return to using Anaconda's version of Python, uncomment the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and ```which python``` to test environment change.
 
 ## Notes
 
