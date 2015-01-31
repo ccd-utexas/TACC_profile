@@ -13,20 +13,14 @@ $ module load git
 $ cd ~
 $ git clone https://github.com/ccd-utexas/TACC_profile.git
 Cloning into 'TACC_profile'...
-Username for 'https://github.com': ccd-admin
-Password for 'https://ccd-admin@github.com':
-[See stache.security.utexas.edu for password.]
-[...git status messages...]
 $ cd ~/TACC_profile
 $ git tag -l
 v1.0.0
 v1.1.0
-[Checkout the latest tag.]
-$ git checkout tags/v1.1.0
+$ git checkout tags/v1.1.0 # checkout the latest tag
 Note: checking out 'tags/v1.1.0'.
 [...git status messages...]
-[Execute setup.sh.]
-$ source setup.sh
+$ source setup.sh # execute setup.sh
 Setting up user profile.
 Copying .continuum to ~
 Copying .bashrc to ~
