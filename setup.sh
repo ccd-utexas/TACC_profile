@@ -5,20 +5,10 @@
 
 echo "Setting up user profile."
 
-list_to_copy=(
-    .continuum
-    .ureka
-    .bashrc
-    .cshrc
-    .cshrc_user
-    .login
-    .login_user
-    .logout
-    .profile
-    .profile_user)
+dot_dir=TACC_profile
 
-for f in ${list_to_copy[@]}; do
-    echo "Copying $f to ~"
+for f in $(ls -A $dot_dir); do
+    echo "Copying $f into ~"
     cp -i -r $f ~/.
 done
 
