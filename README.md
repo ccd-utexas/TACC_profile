@@ -15,10 +15,10 @@ $ git clone https://github.com/ccd-utexas/TACC_profile.git
 Cloning into 'TACC_profile'...
 $ cd ~/TACC_profile
 $ git tag -l
-v0.6.0
-v0.6.1
-$ git checkout tags/v0.6.1 # checkout the latest tag
-Note: checking out 'tags/v0.6.1'.
+v0.0.9
+v0.1.0
+$ git checkout tags/v0.1.0 # checkout the latest tag
+Note: checking out 'tags/v0.1.0'.
 [...git status messages...]
 $ source setup.sh # execute setup.sh
 Setting up user profile.
