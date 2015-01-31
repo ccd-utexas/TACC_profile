@@ -22,7 +22,6 @@ Note: checking out 'tags/v1.1.0'.
 [...git status messages...]
 $ source setup.sh # execute setup.sh
 Setting up user profile.
-Copying .continuum to ~
 Copying .bashrc to ~
 [...status messages...]
 Open a new shell for environment changes to take effect.
@@ -35,10 +34,8 @@ To update, rename your local repository as a backup with a date stamp (just in c
 Example update:
 ```
 $ cd ~
-[Make a backup of your local repository with a date stamp.]
-$ mv TACC_profile TACC_profile_BACKUP_YYYYMMDD
-$ git clone https://github.com/ccd-utexas/TACC_profile.git
-[Proceed as in above example.]
+$ mv TACC_profile TACC_profile_BACKUP_YYYYMMDD # backup your local repository with a datestamp
+$ git clone https://github.com/ccd-utexas/TACC_profile.git # then proceed as in above example
 ```
 
 ## Ureka's Python vs Anaconda's Python
@@ -46,7 +43,3 @@ $ git clone https://github.com/ccd-utexas/TACC_profile.git
 Ureka's version of Python conflicts with Anaconda's version of Python. When using Ureka, comment out the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and run ```ur_test``` to confirm that Ureka works.
 
 To return to using Anaconda's version of Python, uncomment the block in .profile_user that is specific to Anaconda, then execute ```source .profile_user``` and ```which python``` to test environment change.
-
-## Notes
-
-This respository must be kept private since the startup scripts have commands for accessing Lonestar. The commands identify the ccd account. This repository also contains the Continuum Analytics license for Anaconda.

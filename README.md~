@@ -1,6 +1,6 @@
 # TACC_profile
 
-Basic environment for all TACC accounts.
+Basic environment for all TACC accounts associated with the White_Dwarf_Archive allocation.
 
 ## Example setup
 
